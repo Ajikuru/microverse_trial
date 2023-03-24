@@ -1,11 +1,112 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #4d4e53
+
+}
+
 pre {
     background-color: red;
     margin-left: 10px; margin-right: 10px;   
-    background-color: rgb(104, 102, 102); 
+    background-color: #f7f7f7;
     border-radius: 4px;
 }
 
 header{
-    font-size: 1.5em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8em;
+    color: black;
+    
 }
+
+.container{
+    display: flex;
+}
+
+aside {
+    border-right: 2px solid black;
+     /* padding: 30px;   */
+    position: fixed;
+    padding-top: 20px;
+    min-width: 300px;
+    /* width: 20%; */
+
+    /* display: none; */
+}
+aside > ul {
+    list-style-type: none;
+    padding: 0px;
+    /* background-color: blue;
+    width: 100%; */
+}
+
+aside > ul li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid black;
+    /* border-bottom: 1px solid black; */
+    padding-left: 15px;
+    
+}
+
+#doc{
+    margin-left: 15px;
+    
+}
+
+aside{
+    flex: 0.7;
+}
+
+main{
+    /* flex: 3; */
+    padding: 25px 25px;
+    width: 75%;
+    /* position: relative; */
+    margin-left: 350px;
+
+    min-width: 500px;
+}
+
+p{
+    line-height: 30px;
+}
+
+li{
+    line-height: 25px;
+}
+
+
+@media screen and (max-width: 640px) {
+    
+    /* body{
+        background-color: yellow;
+    } */
+
+    aside{
+        position: relative;
+        height: 100px;
+        /* background-color: red; */
+        overflow: hidden;
+    }
+
+    aside ul{
+        height: 200px;
+        overflow-y: scroll;
+    }
+    main{
+        margin: 10px;
+    }
+    .container {
+        flex-direction: column;
+        /* background-color: blue; */
+    }
+}
+
+
+
+
